@@ -1,9 +1,3 @@
-import { Posts } from "@/components/Posts";
-import { sanityFetch } from "@/sanity/lib/live";
-import { BLOG_INDEX_QUERY } from "@/sanity/lib/queries";
-
-export default async function Home() {
-  const { data } = await sanityFetch({ query: BLOG_INDEX_QUERY });
-
-  return <Posts data={data} />;
+export default function Home() {
+  return <h1>Home page</h1>;
 }
